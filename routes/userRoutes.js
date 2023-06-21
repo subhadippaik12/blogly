@@ -9,12 +9,12 @@ const {
 const router = express.Router();
 
 // GET ALL USERS || GET
-router.get("https://blogly-backend.onrender.com//all-users", getAllUsers);
+router.get("/all-users", getAllUsers);
 
 // CREATE USER || POST
-router.post("https://blogly-backend.onrender.com//register", registerController);
+router.post("/register", registerController);
 
 //LOGIN || POST
-router.post("https://blogly-backend.onrender.com//login", loginController);
+router.post("/login", loginController);
 
 module.exports = router;
