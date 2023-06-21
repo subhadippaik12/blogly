@@ -13,21 +13,21 @@ const router = express.Router();
 
 //routes
 // GET || all blogs
-router.get("https://blogly-backend.onrender.com//all-blog", getAllBlogsController);
+router.get("/all-blog", getAllBlogsController);
 
 //POST || create blog
-router.post("https://blogly-backend.onrender.com//create-blog", createBlogController);
+router.post("/create-blog", createBlogController);
 
 //PUT || update blog
-router.put("https://blogly-backend.onrender.com//update-blog/:id", updateBlogController);
+router.put("/update-blog/:id", updateBlogController);
 
 //GET || SIngle Blog Details
-router.get("https://blogly-backend.onrender.com//get-blog/:id", getBlogByIdController);
+router.get("/get-blog/:id", getBlogByIdController);
 
 //DELETE || delete blog
-router.delete("https://blogly-backend.onrender.com//delete-blog/:id", deleteBlogController);
+router.delete("/delete-blog/:id", deleteBlogController);
 
 //GET || user blog
-router.get("https://blogly-backend.onrender.com//user-blog/:id", userBlogControlller);
+router.get("/user-blog/:id", userBlogControlller);
 
 module.exports = router;
