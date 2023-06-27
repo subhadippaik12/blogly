@@ -13,7 +13,7 @@ function App() {
       <Header />
       <Toaster />
       <Routes>
-        <Route path="/" element={<Blogs />} />
+        <Route path="/" element={<Login />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/my-blogs" element={<UserBlogs />} />
         <Route path="/blog-details/:id" element={<BlogDetails />} />
